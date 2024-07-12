@@ -2,8 +2,8 @@
 
 <template>
     <header class="flex justify-between items-center gap-5 px-24 h-[80px] bg-gray-800">
-        <div>
-            <h1 class="text-white logo">Mango</h1>
+        <div class="logo">
+            <h1 class="text-white">Mango</h1>
         </div>
         <nav>
             <ul class="flex space-x-4">

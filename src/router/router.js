@@ -11,6 +11,8 @@ import Services from './../pages/Services.vue';
 import NewService from './../pages/NewService.vue';
 import EditService from './../pages/EditService.vue';
 import DeleteService from './../pages/DeleteService.vue';
+import NuevaPagina from './../pages/NuevaPagina.vue';
+import UserCard from './../pages/UserCard.vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import { suscribeToAuth } from '../services/auth';
 
@@ -28,6 +30,8 @@ const routes = [
     { path: '/editar-usuario/:id',      component: EditUser,            meta: {requiresAuth: true}, },
     { path: '/usuario/:id',             component: UserProfile,         meta: {requiresAuth: true}, },
     { path: '/usuario/:id/chat',        component: PrivateChat,         meta: {requiresAuth: true}, },
+    { path: '/nuevapagina',             component: NuevaPagina },
+    { path: '/usercard',                component: UserCard },
 ]
 
 const router = createRouter({
